@@ -141,18 +141,26 @@ void badExample() {
 class BankAccount {
 private:
     double balance_;
+    int id_;
     std::string encrypted_password_;
 
     // 辅助函数：验证金额是否合法
     bool isValidAmount(double amount) const {
         return amount >= 0;
     }
+    // 同理：验证id是否合法
+    bool isValidId(int id) const{
+        return id > 0;
+    }
 
 public:
     // 构造函数
-    BankAccount(double initialBalance) : balance_(0) {
+    BankAccount(double initialBalance,int id) : balance_(0),id_(-1) {
         if (isValidAmount(initialBalance)) {
             balance_ = initialBalance;
+        }
+        if (isValidId(id)){
+            id_ = id;
         }
     }
 
@@ -195,20 +203,28 @@ public:
         return true;
     }
 
-private:
+private:    
+    //简单的加密实现
+    std::string encrypt(const std::string& pwd) const {
+        std::string temp=pwd;
+        for(int i=0;i<pwd.size();i++){
+            temp[i]=char(int(temp[i])^id_); 
+            //基于a^b^b=a实现的简单加密
+            //对于部分字符可能会加密出现不可见特殊字符
+        }
+        return temp;  
+    }
+
     bool verifyPassword(const std::string& pwd) const {
-        // 密码验证逻辑...
+        if(encrypt(encrypted_password_) != pwd) return false;
         return true;
     }
 
-    std::string encrypt(const std::string& pwd) const {
-        // 加密逻辑...
-        return pwd;  // 简化示例
-    }
+
 };
 
 void goodExample() {
-    BankAccount account(1000);
+    BankAccount account(1000,32);
 
     // account.balance_ = -1000;  // 编译错误！balance_是私有的
 
