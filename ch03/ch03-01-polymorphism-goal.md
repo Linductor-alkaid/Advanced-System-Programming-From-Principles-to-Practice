@@ -208,6 +208,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_01a_no_polymorphism.cpp](../code/ch03/03_01a_no_polymorphism.cpp)
+
 **问题分析**：
 1. 每添加新动物类型，需要修改 `makeAnimalSound` 函数
 2. 客户端代码必须知道所有具体类型
@@ -328,6 +330,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_01b_polymorphism.cpp](../code/ch03/03_01b_polymorphism.cpp)
 
 **优势分析**：
 1. 添加新类型只需继承 `Animal`，无需修改 `animalSound` 函数
@@ -467,6 +471,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_01c_graphics_system.cpp](../code/ch03/03_01c_graphics_system.cpp)
 
 ---
 
@@ -652,6 +658,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_01d_object_slicing.cpp](../code/ch03/03_01d_object_slicing.cpp)
+
 **原理**：按值传递会复制对象，但只复制基类部分，派生类部分被"切掉"。
 
 ```mermaid
@@ -723,6 +731,8 @@ int main() {
     // Base::cleanup     (不是 Derived::cleanup!)
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_01e_virtual_in_ctor.cpp](../code/ch03/03_01e_virtual_in_ctor.cpp)
 
 **原因**：在基类构造函数执行时，派生类部分还未初始化，此时调用虚函数只会调用基类版本。
 
@@ -900,6 +910,8 @@ Derived d;
 d.func(1);     // Derived::func int
 d.func(1.0);   // Base::func double (因为有 using)
 ```
+
+> 📁 完整代码：[code/ch03/03_01f_hidden_overload.cpp](../code/ch03/03_01f_hidden_overload.cpp)
 
 ---
 

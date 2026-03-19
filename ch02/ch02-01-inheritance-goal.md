@@ -317,6 +317,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_01a_inheritance_basic.cpp](../code/ch02/02_01a_inheritance_basic.cpp)
+
 ### 示例3：继承与多态基础
 
 ```cpp
@@ -397,6 +399,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_01b_polymorphism_intro.cpp](../code/ch02/02_01b_polymorphism_intro.cpp)
 
 ---
 
@@ -543,6 +547,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_01c_ctor_dtor_order.cpp](../code/ch02/02_01c_ctor_dtor_order.cpp)
+
 **输出**：
 ```
 Base constructor
@@ -629,6 +635,8 @@ int main() {
     // 不会输出 "Derived::init"！
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_01d_virtual_in_ctor.cpp](../code/ch02/02_01d_virtual_in_ctor.cpp)
 
 **原因**：在基类构造函数执行时，派生类部分还未初始化，此时调用虚函数只会调用基类版本。
 

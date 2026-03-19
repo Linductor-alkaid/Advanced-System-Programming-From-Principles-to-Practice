@@ -297,6 +297,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_05a_unique_ptr.cpp](../code/ch01/01_05a_unique_ptr.cpp)
+
 **输出**：
 ```
 === 创建 unique_ptr ===
@@ -381,6 +383,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_05b_shared_ptr.cpp](../code/ch01/01_05b_shared_ptr.cpp)
 
 **输出**：
 ```
@@ -492,6 +496,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_05c_weak_ptr.cpp](../code/ch01/01_05c_weak_ptr.cpp)
+
 **输出**：
 ```
 === 创建父节点 ===
@@ -602,6 +608,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_05d_custom_deleter.cpp](../code/ch01/01_05d_custom_deleter.cpp)
+
 **输出**：
 ```
 === FILE* 删除器 ===
@@ -677,6 +685,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_05e_array_ptr.cpp](../code/ch01/01_05e_array_ptr.cpp)
 
 **输出**：
 ```

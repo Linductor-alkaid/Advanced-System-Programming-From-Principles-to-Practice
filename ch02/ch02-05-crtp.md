@@ -190,6 +190,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_05a_crtp_basic.cpp](../code/ch02/02_05a_crtp_basic.cpp)
+
 ### 示例2：CRTP 实现单例模式
 
 ```cpp
@@ -248,6 +250,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_05b_crtp_singleton.cpp](../code/ch02/02_05b_crtp_singleton.cpp)
 
 ### 示例3：CRTP 实现对象计数
 
@@ -321,6 +325,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_05c_crtp_counter.cpp](../code/ch02/02_05c_crtp_counter.cpp)
 
 ### 示例4：CRTP vs 虚函数性能对比
 
@@ -408,6 +414,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_05d_crtp_perf.cpp](../code/ch02/02_05d_crtp_perf.cpp)
 
 ---
 
@@ -505,6 +513,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_05e_method_chain.cpp](../code/ch02/02_05e_method_chain.cpp)
 
 #### 2. 混入（Mixin）功能
 
@@ -1026,6 +1036,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_05f_observer.cpp](../code/ch02/02_05f_observer.cpp)
 
 ---
 

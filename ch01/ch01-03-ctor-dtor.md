@@ -156,6 +156,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_03a_ctor_dtor_order.cpp](../code/ch01/01_03a_ctor_dtor_order.cpp)
+
 **输出**：
 ```
 ===== main 开始 =====
@@ -221,6 +223,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_03b_static_init.cpp](../code/ch01/01_03b_static_init.cpp)
 
 **输出**：
 ```
@@ -292,6 +296,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_03c_member_order.cpp](../code/ch01/01_03c_member_order.cpp)
+
 **输出**：
 ```
 创建 Derived 对象:
@@ -359,6 +365,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_03d_stack_unwinding.cpp](../code/ch01/01_03d_stack_unwinding.cpp)
+
 **输出**：
 ```
 程序开始
@@ -424,6 +432,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_03e_placement_new.cpp](../code/ch01/01_03e_placement_new.cpp)
 
 **输出**：
 ```

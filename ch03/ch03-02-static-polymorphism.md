@@ -322,6 +322,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_02a_no_overload.cpp](../code/ch03/03_02a_no_overload.cpp)
+
 **问题分析**：
 1. 相同逻辑重复多次
 2. 添加新类型需要编写新函数
@@ -377,6 +379,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_02b_overload.cpp](../code/ch03/03_02b_overload.cpp)
+
 ### 示例3：使用函数模板
 
 ```cpp
@@ -429,6 +433,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_02c_template.cpp](../code/ch03/03_02c_template.cpp)
 
 ### 示例4：类模板与静态多态
 
@@ -519,6 +525,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_02d_class_template.cpp](../code/ch03/03_02d_class_template.cpp)
+
 ### 示例5：编译期类型选择（std::enable_if）
 
 ```cpp
@@ -554,6 +562,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_02e_enable_if.cpp](../code/ch03/03_02e_enable_if.cpp)
 
 ---
 
@@ -647,6 +657,8 @@ int main() {
     return result;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_02f_constexpr.cpp](../code/ch03/03_02f_constexpr.cpp)
 
 ### CRTP：奇异递归模板模式（回顾）
 
@@ -850,6 +862,8 @@ int main() {
     // add(1.5, 2.5);   // 编译错误：double不是整数类型
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_02g_concepts.cpp](../code/ch03/03_02g_concepts.cpp)
 
 #### 5. 避免模板元编程过度使用
 

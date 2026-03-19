@@ -157,6 +157,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_02a_access_hack.cpp](../code/ch01/01_02a_access_hack.cpp)
+
 **输出**：
 ```
 Private value: 42
@@ -206,6 +208,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_02b_memory_layout.cpp](../code/ch01/01_02b_memory_layout.cpp)
 
 **输出**：
 ```
@@ -437,6 +441,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_02c_layout_compare.cpp](../code/ch01/01_02c_layout_compare.cpp)
 
 **可能的输出**（取决于系统）：
 ```

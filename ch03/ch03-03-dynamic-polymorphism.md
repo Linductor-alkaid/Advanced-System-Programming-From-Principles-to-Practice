@@ -261,6 +261,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_03a_no_virtual.cpp](../code/ch03/03_03a_no_virtual.cpp)
+
 **问题分析**：
 1. 通过基类引用调用时，总是调用基类版本
 2. 无法用统一容器存储并调用不同派生类对象
@@ -349,6 +351,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_03b_virtual.cpp](../code/ch03/03_03b_virtual.cpp)
 
 ### 示例3：纯虚函数与抽象类
 
@@ -457,6 +461,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_03c_pure_virtual.cpp](../code/ch03/03_03c_pure_virtual.cpp)
+
 ### 示例4：虚析构函数的重要性
 
 ```cpp
@@ -529,6 +535,8 @@ Derived constructor, data=42
 Base destructor    ← 同样有问题
 */
 ```
+
+> 📁 完整代码：[code/ch03/03_03d_virtual_dtor.cpp](../code/ch03/03_03d_virtual_dtor.cpp)
 
 **正确做法**：将基类析构函数声明为虚函数
 
@@ -739,6 +747,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_03e_object_slicing.cpp](../code/ch03/03_03e_object_slicing.cpp)
+
 #### 陷阱3：在构造/析构函数中调用虚函数
 
 ```cpp
@@ -771,6 +781,8 @@ int main() {
     // Base::cleanup     (不是 Derived::cleanup!)
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_03f_virtual_in_ctor.cpp](../code/ch03/03_03f_virtual_in_ctor.cpp)
 
 **原因**：构造派生类时，基类先构造，此时派生类部分未初始化。
 

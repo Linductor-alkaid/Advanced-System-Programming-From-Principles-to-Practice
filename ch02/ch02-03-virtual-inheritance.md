@@ -204,6 +204,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_03a_diamond_problem.cpp](../code/ch02/02_03a_diamond_problem.cpp)
+
 ### 示例2：使用虚继承解决菱形问题
 
 ```cpp
@@ -256,6 +258,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_03b_virtual_inherit.cpp](../code/ch02/02_03b_virtual_inherit.cpp)
 
 ### 示例3：验证内存布局差异
 
@@ -325,6 +329,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_03c_memory_compare.cpp](../code/ch02/02_03c_memory_compare.cpp)
+
 **可能的输出**（64位系统）：
 ```
 === 内存大小对比 ===
@@ -385,6 +391,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_03d_ctor_order.cpp](../code/ch02/02_03d_ctor_order.cpp)
 
 **输出**：
 ```
@@ -613,6 +621,8 @@ int main() {
     // Derived中的 Base(100) 被忽略了
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_03e_init_ignored.cpp](../code/ch02/02_03e_init_ignored.cpp)
 
 **原因**：虚基类只由最远派生类初始化，中间类的初始化列表会被忽略。
 

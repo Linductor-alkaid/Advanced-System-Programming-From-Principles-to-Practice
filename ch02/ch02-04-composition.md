@@ -186,6 +186,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_04a_inheritance_shape.cpp](../code/ch02/02_04a_inheritance_shape.cpp)
+
 ### 示例2：正确使用组合（has-a关系）
 
 ```cpp
@@ -244,6 +246,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_04b_composition_car.cpp](../code/ch02/02_04b_composition_car.cpp)
 
 ### 示例3：反例 - 误用继承表达has-a关系
 
@@ -342,6 +346,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_04c_interface_engine.cpp](../code/ch02/02_04c_interface_engine.cpp)
 
 ---
 

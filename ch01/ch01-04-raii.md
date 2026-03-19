@@ -286,6 +286,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_04a_file_raii.cpp](../code/ch01/01_04a_file_raii.cpp)
+
 **输出**：
 ```
 文件已打开: test.txt
@@ -357,6 +359,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_04b_scoped_lock.cpp](../code/ch01/01_04b_scoped_lock.cpp)
 
 **输出**：
 ```
@@ -443,6 +447,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_04c_dynamic_array.cpp](../code/ch01/01_04c_dynamic_array.cpp)
 
 **输出**：
 ```
@@ -538,6 +544,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch01/01_04d_database_conn.cpp](../code/ch01/01_04d_database_conn.cpp)
+
 **输出**：
 ```
 已连接到数据库: localhost:5432/mydb
@@ -622,6 +630,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_04e_stdlib_raii.cpp](../code/ch01/01_04e_stdlib_raii.cpp)
 
 **输出**：
 ```
@@ -1196,6 +1206,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch01/01_04f_logging_system.cpp](../code/ch01/01_04f_logging_system.cpp)
 
 **输出 (app.log)**：
 ```

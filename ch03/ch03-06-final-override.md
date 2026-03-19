@@ -178,6 +178,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_06a_override_typo.cpp](../code/ch03/03_06a_override_typo.cpp)
+
 ### 示例2：override 检查签名匹配
 
 ```cpp
@@ -250,6 +252,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_06b_override_sig.cpp](../code/ch03/03_06b_override_sig.cpp)
+
 ### 示例3：final 禁止继承
 
 ```cpp
@@ -295,6 +299,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_06c_final_class.cpp](../code/ch03/03_06c_final_class.cpp)
 
 ### 示例4：final 禁止覆盖虚函数
 
@@ -353,6 +359,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_06d_final_func.cpp](../code/ch03/03_06d_final_func.cpp)
 
 ### 示例5：override 和 final 同时使用
 
@@ -418,6 +426,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_06e_override_final.cpp](../code/ch03/03_06e_override_final.cpp)
 
 ### 示例6：协变返回类型与 override
 
@@ -486,6 +496,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_06f_covariant.cpp](../code/ch03/03_06f_covariant.cpp)
 
 ---
 
@@ -631,6 +643,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_06g_template_override.cpp](../code/ch03/03_06g_template_override.cpp)
 
 ---
 

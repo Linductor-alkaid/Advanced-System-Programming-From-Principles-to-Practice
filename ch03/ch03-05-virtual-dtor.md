@@ -209,6 +209,8 @@ Case 3: 即使使用智能指针，Derived的内存仍然泄漏！
 */
 ```
 
+> 📁 完整代码：[code/ch03/03_05a_no_virtual_dtor.cpp](../code/ch03/03_05a_no_virtual_dtor.cpp)
+
 ### 示例2：正确的虚析构函数实现
 
 ```cpp
@@ -287,6 +289,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_05b_virtual_dtor.cpp](../code/ch03/03_05b_virtual_dtor.cpp)
+
 ### 示例3：纯虚析构函数
 
 ```cpp
@@ -356,6 +360,8 @@ Circle destructor
 Shape destructor
 */
 ```
+
+> 📁 完整代码：[code/ch03/03_05c_pure_virtual_dtor.cpp](../code/ch03/03_05c_pure_virtual_dtor.cpp)
 
 ### 示例4：虚析构函数与析构顺序
 
@@ -428,6 +434,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch03/03_05d_dtor_order.cpp](../code/ch03/03_05d_dtor_order.cpp)
+
 ### 示例5：虚析构函数的性能开销
 
 ```cpp
@@ -489,6 +497,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_05e_dtor_perf.cpp](../code/ch03/03_05e_dtor_perf.cpp)
 
 ---
 

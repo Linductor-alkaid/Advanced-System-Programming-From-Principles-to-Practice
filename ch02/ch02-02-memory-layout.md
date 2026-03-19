@@ -198,6 +198,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_02a_single_inherit_layout.cpp](../code/ch02/02_02a_single_inherit_layout.cpp)
+
 **可能的输出**（64位系统）：
 ```
 === Single Inheritance Memory Layout ===
@@ -293,6 +295,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_02b_multi_inherit_layout.cpp](../code/ch02/02_02b_multi_inherit_layout.cpp)
+
 **可能的输出**（64位系统）：
 ```
 === Multiple Inheritance Memory Layout ===
@@ -372,6 +376,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_02c_pointer_adjust.cpp](../code/ch02/02_02c_pointer_adjust.cpp)
 
 **输出**：
 ```
@@ -598,6 +604,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_02d_size_assumption.cpp](../code/ch02/02_02d_size_assumption.cpp)
+
 #### 陷阱2：多继承时指针类型转换的地址变化
 
 ```cpp
@@ -678,6 +686,8 @@ int main() {
 }
 ```
 
+> 📁 完整代码：[code/ch02/02_02e_cstyle_cast.cpp](../code/ch02/02_02e_cstyle_cast.cpp)
+
 #### 陷阱4：多继承中使用memcmp比较对象
 
 ```cpp
@@ -720,6 +730,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch02/02_02f_memcmp_vfunc.cpp](../code/ch02/02_02f_memcmp_vfunc.cpp)
 
 ---
 

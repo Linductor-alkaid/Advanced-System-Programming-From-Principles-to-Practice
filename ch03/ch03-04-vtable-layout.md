@@ -197,6 +197,8 @@ vtable contents:
 */
 ```
 
+> 📁 完整代码：[code/ch03/03_04a_vtable_verify.cpp](../code/ch03/03_04a_vtable_verify.cpp)
+
 ### 示例2：单继承的内存布局详解
 
 ```cpp
@@ -274,6 +276,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_04b_single_layout.cpp](../code/ch03/03_04b_single_layout.cpp)
 
 ### 示例3：多继承的内存布局
 
@@ -360,6 +364,8 @@ Explanation:
 */
 ```
 
+> 📁 完整代码：[code/ch03/03_04c_multi_layout.cpp](../code/ch03/03_04c_multi_layout.cpp)
+
 ### 示例4：虚继承下的vtable
 
 ```cpp
@@ -437,6 +443,8 @@ sizeof(Diamond) = 48   (Derived1部分 + Derived2部分 + 共享Base子对象)
 - 虚基类表：存储到虚基类的偏移量
 */
 ```
+
+> 📁 完整代码：[code/ch03/03_04d_virtual_inherit.cpp](../code/ch03/03_04d_virtual_inherit.cpp)
 
 ---
 
@@ -634,6 +642,8 @@ int main() {
     return 0;
 }
 ```
+
+> 📁 完整代码：[code/ch03/03_04e_perf_benchmark.cpp](../code/ch03/03_04e_perf_benchmark.cpp)
 
 ---
 
