@@ -67,18 +67,14 @@ graph LR
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Created: std::thread 构造
-    Created --> Ready: 进入就绪队列
-    Ready --> Running: 被调度器选中
-    Running --> Ready: 时间片用完/被抢占
-    Running --> Blocked: 等待 I/O / mutex / sleep
-    Blocked --> Ready: 等待条件满足
-    Running --> Terminated: 线程函数返回
-    Terminated --> [*]: join() 回收 / detach() 分离
-
-    note right of Created: 构造函数返回后<br/>线程立即可调度
-    note right of Blocked: sleep_for / mutex::lock<br/> / condition_variable::wait
-    note right of Terminated: 线程函数执行完毕<br/>但资源可能尚未回收
+    [*] --> Created : 构造thread
+    Created --> Ready : 进入就绪队列
+    Ready --> Running : 调度器选中
+    Running --> Ready : 时间片用完
+    Running --> Blocked : 等待IO或锁
+    Blocked --> Ready : 条件满足
+    Running --> Terminated : 函数返回
+    Terminated --> [*] : join或detach
 ```
 
 关键要点：
