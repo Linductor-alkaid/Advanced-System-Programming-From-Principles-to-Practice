@@ -418,7 +418,7 @@ int main() {
     ::operator delete(raw);
 
     std::cout << "\n=== 对象数组 ===" << std::endl;
-    Widget* arr = new Widget[3]{"元素0", "元素1", "元素2"};
+    Widget* arr = new Widget[3]{{"元素0"}, {"元素1"}, {"元素2"}};
     delete[] arr;  // 调用3次析构函数 + 释放内存
 
     return 0;

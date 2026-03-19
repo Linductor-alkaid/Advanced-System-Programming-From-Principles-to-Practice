@@ -414,7 +414,9 @@ int main() {
     std::cout << "sizeof(A) = " << sizeof(A) << std::endl;
     std::cout << "sizeof(B) = " << sizeof(B) << std::endl;
 
-    A objA{1, 2, 3};
+    A objA;
+    objA.a = 1;
+    objA.c = 3;
     B objB{10, 20, 30};
 
     // 打印内存

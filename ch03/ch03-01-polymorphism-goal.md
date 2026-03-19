@@ -163,19 +163,19 @@ public:
 class Dog : public Animal {
 public:
     Dog(const std::string& n) : Animal(AnimalType::Dog, n) {}
-    void bark() { std::cout << name << " says: Woof!\n"; }
+    void bark() const { std::cout << name << " says: Woof!\n"; }
 };
 
 class Cat : public Animal {
 public:
     Cat(const std::string& n) : Animal(AnimalType::Cat, n) {}
-    void meow() { std::cout << name << " says: Meow!\n"; }
+    void meow() const { std::cout << name << " says: Meow!\n"; }
 };
 
 class Bird : public Animal {
 public:
     Bird(const std::string& n) : Animal(AnimalType::Bird, n) {}
-    void chirp() { std::cout << name << " says: Tweet!\n"; }
+    void chirp() const { std::cout << name << " says: Tweet!\n"; }
 };
 
 // 问题：需要类型分支判断
@@ -624,12 +624,12 @@ graph TB
 
 class Base {
 public:
-    virtual void func() { std::cout << "Base\n"; }
+    virtual void func() const { std::cout << "Base\n"; }
 };
 
 class Derived : public Base {
 public:
-    void func() override { std::cout << "Derived\n"; }
+    void func() const override { std::cout << "Derived\n"; }
     void extra() { std::cout << "Extra\n"; }
 };
 

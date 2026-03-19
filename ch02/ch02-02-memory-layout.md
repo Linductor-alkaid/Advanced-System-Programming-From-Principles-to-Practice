@@ -245,7 +245,10 @@ class Derived : public Base1, public Base2 {
 public:
     int derivedData;
 
-    Derived() : base1Data(1), base2Data(2), derivedData(3) {}
+    Derived() : Base1(), Base2(), derivedData(3) {
+        base1Data = 1;
+        base2Data = 2;
+    }
 
     void func1() override { std::cout << "Derived::func1\n"; }
     void func2() override { std::cout << "Derived::func2\n"; }
