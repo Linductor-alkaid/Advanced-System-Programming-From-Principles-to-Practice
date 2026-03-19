@@ -1,0 +1,16 @@
+# 编译产物
+code/build/
+
+# 编辑器与IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# superpowers 工作流
+docs/superpowers/specs/
