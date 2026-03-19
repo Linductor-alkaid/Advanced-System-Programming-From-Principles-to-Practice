@@ -1,0 +1,19 @@
+=== Case 1: 直接删除派生类指针 ===
+Base constructor, allocating baseData_
+Derived constructor, allocating derivedData_
+Derived destructor, freeing derivedData_
+Base destructor, freeing baseData_
+Case 1: 内存已正确释放
+
+=== Case 2: 通过基类指针删除（危险！） ===
+Base constructor, allocating baseData_
+Derived constructor, allocating derivedData_
+Base destructor, freeing baseData_
+Case 2: Derived的内存泄漏了！
+
+=== Case 3: 智能指针仍需虚析构函数 ===
+Base constructor, allocating baseData_
+Derived constructor, allocating derivedData_
+Case 3: 即使使用智能指针，Derived的内存仍然泄漏！
+
+Base destructor, freeing baseData_

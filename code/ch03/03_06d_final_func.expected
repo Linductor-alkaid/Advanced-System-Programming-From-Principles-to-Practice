@@ -1,0 +1,3 @@
+Derived::criticalFunction
+Middle::criticalFunction
+Middle::flexibleFunction - 不允许再覆盖

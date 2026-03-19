@@ -1,0 +1,15 @@
+=== 内存大小对比 ===
+
+非虚继承:
+  sizeof(Dog)    = 8
+  sizeof(Bird)   = 8
+  sizeof(DogBird)= 20
+
+虚继承:
+  sizeof(VDog)    = 16
+  sizeof(VBird)   = 16
+  sizeof(VDogBird)= 40
+
+=== 分析 ===
+非虚继承 DogBird 包含两份 Animal，sizeof = 2 * sizeof(Animal) + 成员
+虚继承 VDogBird 只有一份 Animal，但需要额外的指针开销

@@ -1,0 +1,8 @@
+已连接到数据库: localhost:5432/mydb
+开始事务
+执行: UPDATE accounts SET balance = balance - 100 WHERE id = 1
+执行: UPDATE accounts SET balance = balance + 100 WHERE id = 2
+操作失败，事务将自动回滚
+捕获异常: 银行系统故障
+事务未提交，自动回滚
+数据库连接已关闭

@@ -1,0 +1,5 @@
+A constructor: 100
+B constructor
+C constructor
+D constructor
+A::val = 100

@@ -1,0 +1,10 @@
+
+=== Drawing All Shapes ===
+Drawing Rectangle at (0, 0) size: 5x3
+Drawing Circle at (10, 10) radius: 2
+Drawing Triangle at (5, 5) sides: 3, 4, 5
+
+Total Area: 33.5664
+Shape moved to (1, 1)
+Shape moved to (11, 11)
+Shape moved to (6, 6)

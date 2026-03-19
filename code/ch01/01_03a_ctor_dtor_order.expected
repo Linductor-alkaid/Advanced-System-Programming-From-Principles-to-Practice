@@ -1,0 +1,14 @@
+===== main 开始 =====
+构造: main::t1
+进入 functionA
+构造: functionA::t2
+构造: functionA::t3
+进入 functionB
+构造: functionB::t4
+离开 functionB
+析构: functionB::t4
+离开 functionA
+析构: functionA::t3
+析构: functionA::t2
+===== main 结束 =====
+析构: main::t1

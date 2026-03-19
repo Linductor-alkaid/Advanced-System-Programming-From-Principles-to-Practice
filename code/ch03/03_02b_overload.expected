@@ -1,0 +1,7 @@
+Integer: 42
+Double: 3.14
+String: Hello
+String: World
+[LOG] Info
+[Warning] Low memory
+[Error] File not found (code: 404)

@@ -1,0 +1,6 @@
+publicData=1, privateData=2, protectedData=3
+
+Raw memory dump:
+Offset 0: 1 (publicData)
+Offset 4: 2 (privateData)
+Offset 8: 3 (protectedData)

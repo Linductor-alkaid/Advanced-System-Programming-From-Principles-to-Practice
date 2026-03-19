@@ -1,0 +1,12 @@
+=== Case 1: 直接删除派生类指针 ===
+Derived constructor, data=42
+Derived destructor, deleting data
+Base destructor
+
+=== Case 2: 删除基类指针（危险！） ===
+Derived constructor, data=42
+Base destructor
+
+=== Case 3: 使用智能指针（仍需虚析构函数） ===
+Derived constructor, data=42
+Base destructor

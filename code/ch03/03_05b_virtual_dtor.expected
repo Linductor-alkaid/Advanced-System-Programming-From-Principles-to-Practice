@@ -1,0 +1,19 @@
+=== 正确使用虚析构函数 ===
+
+场景1：通过基类指针删除
+Base constructor, allocating baseData_
+Derived constructor, allocating derivedData_
+Derived destructor, freeing derivedData_
+Base destructor, freeing baseData_
+
+场景2：使用智能指针
+Base constructor, allocating baseData_
+Derived constructor, allocating derivedData_
+Derived destructor, freeing derivedData_
+Base destructor, freeing baseData_
+
+场景3：多态容器
+Base constructor, allocating baseData_
+Derived constructor, allocating derivedData_
+Derived destructor, freeing derivedData_
+Base destructor, freeing baseData_

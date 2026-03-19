@@ -1,0 +1,21 @@
+=== 创建 unique_ptr ===
+Widget 1 构造
+Widget 2 构造
+
+=== 访问对象 ===
+Widget 1 正在工作
+Widget 2 正在工作
+
+=== 所有权转移 ===
+p1 为空（所有权已转移）
+Widget 1 正在工作
+
+=== 容器中使用 ===
+Widget 3 构造
+Widget 4 构造
+
+=== 离开作用域 ===
+Widget 3 析构
+Widget 4 析构
+Widget 2 析构
+Widget 1 析构

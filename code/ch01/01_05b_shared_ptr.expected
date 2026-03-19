@@ -1,0 +1,20 @@
+=== 创建 shared_ptr ===
+Widget 1 构造
+p1.use_count() = 1
+
+=== 拷贝 shared_ptr ===
+p1.use_count() = 2
+p2.use_count() = 2
+
+=== 添加到容器 ===
+p1.use_count() = 3
+
+=== 离开内部作用域 ===
+p1.use_count() = 1
+
+=== reset 操作 ===
+Widget 1 析构 (use_count=1)
+p1.use_count() = 0
+p1 == nullptr: 1
+
+=== 离开作用域 ===

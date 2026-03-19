@@ -1,0 +1,7 @@
+=== 纯虚析构函数示例 ===
+
+Circle constructor
+Area: 78.5397
+Drawing Circle, radius=5
+Circle destructor
+Shape destructor

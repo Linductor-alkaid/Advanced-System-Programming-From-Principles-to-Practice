@@ -1,0 +1,19 @@
+=== std::unique_ptr ===
+值: 42
+unique_ptr 已释放
+
+=== std::shared_ptr ===
+引用计数: 1
+引用计数: 2
+引用计数: 1
+
+=== std::lock_guard ===
+锁已持有
+锁已释放
+
+=== std::fstream ===
+文件已关闭
+
+=== std::vector ===
+大小: 5
+vector 内存已释放

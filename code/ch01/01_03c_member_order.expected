@@ -1,0 +1,13 @@
+创建 Derived 对象:
+  Base构造
+  Member构造: m1
+  Member构造: m2
+  Member构造: m3
+  Derived构造
+
+销毁 Derived 对象:
+  Derived析构
+  Member析构: m3
+  Member析构: m2
+  Member析构: m1
+  Base析构

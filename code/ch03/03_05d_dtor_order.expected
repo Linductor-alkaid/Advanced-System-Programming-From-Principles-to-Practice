@@ -1,0 +1,9 @@
+=== 构造顺序 ===
+Base::Base() - 构造基类部分
+Middle::Middle() - 构造中间类部分
+Derived::Derived() - 构造派生类部分
+
+=== 析构顺序 ===
+Derived::~Derived() - 析构派生类部分, 释放 derivedResource_
+Middle::~Middle() - 析构中间类部分, 释放 middleResource_
+Base::~Base() - 析构基类部分, 释放 baseResource_

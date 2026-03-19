@@ -1,0 +1,3 @@
+db.age = 5
+Animal eating, age: 5
+db.Bird::age = 10
