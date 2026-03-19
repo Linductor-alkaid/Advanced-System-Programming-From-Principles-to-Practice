@@ -2,7 +2,24 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(chmod +x /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/code/verify.sh)",
+      "Bash(find /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/ch* -type f -name \"*.md\")",
+      "Bash(ls -lh /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/code/ch01/*.expected)",
+      "Bash(wc -l /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/ch*/*.md)",
+      "Bash(bash verify.sh)",
+      "Bash(git checkout:*)",
+      "Bash(cmake -B build -DCMAKE_BUILD_TYPE=Debug)",
+      "Read(//media/linductor/Game/myproject/**)",
+      "Read(//home/marijana/**)",
+      "Bash(ls -la /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/code/ch01/*.expected)",
+      "Bash(find /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/code -type f \\\\\\(-name *.expected -o -name *.buildonly -o -name *.exitonly -o -name *.expected.sorted -o -name *.expected.regex \\\\\\))",
+      "Bash(ls -la /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/code/ch01/01_01_bank_account.*)",
+      "Bash(grep \"\\\\.cpp$\")",
+      "Bash(ls -1 /media/linductor/Game/myproject/Advanced_System_Programming_Tutorial/ch01/*.md)",
+      "Bash(/tmp/patterns_summary.txt:*)",
+      "Read(//tmp/**)",
+      "Bash(./verify.sh)"
     ]
   }
 }
